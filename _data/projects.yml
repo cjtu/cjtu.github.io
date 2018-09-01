@@ -1,0 +1,14 @@
+# Projects
+# uncomment the urls if you wish to display them, and add your own URL
+
+- project: Craterpy
+  role: Founder & Primary Developer
+  duration: 2016 &mdash; Present
+  url: "github.com/cjtu/craterpy"
+  description: Craterpy is an open-source data analysis toolkit for planetary scientists. It simplifies statistical analyses on images of impact craters.
+
+- project: Becoming a Planetary Developer Blog
+  role: Blogger
+  duration: 2017 &mdash; Present
+  url: "cjtu.github.io/blog"
+  description: Becoming a Planetary Developer is my dev blog when I post things I learn in my adventures as a budding software developer and planetary/data science enthusiast!

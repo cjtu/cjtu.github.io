@@ -1,0 +1,15 @@
+# Associations
+# comment out the urls if you do not wish to display them
+
+- organization:
+  role: Volunteer
+  year: 2008 &mdash; Present
+  url: http://
+  summary:
+
+
+- organization:
+  role:
+  year: 1994 &mdash; Present
+  url: http://
+  summary:
