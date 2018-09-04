@@ -16,7 +16,7 @@ resume_contact_email:           "cjt347@nau.edu"
 resume_contact_telephone:       "928-266-4451"
 resume_contact_address:         ""
 resume_header_contact_info:     ""
-resume_header_intro:            "<p>I am a planetary scienist in the Astronomy and Planetary Science PhD program at Northern Arizona University. My current research interests involve lunar surface processes, including space weathering, cratering, and the production and distribution of volatiles on the Moon. All inquiries can be addressed to <a href='mailto:cj.taiudovicic'>cj.taiudovicic@gmail.com</a></p>"
+resume_header_intro:            "<p>I am a planetary scienist in the Astronomy and Planetary Science PhD program at Northern Arizona University. My current research interests involve lunar surface processes, including space weathering, cratering, and the production and distribution of volatiles on the Moon. All inquiries can be addressed to <a style='color:#999;' href='mailto:cj.taiudovicic@gmail.com'>cj.taiudovicic@gmail.com</a>.</p>"
 
 # Comment out unused sections
 # resume_section_associations:    true
