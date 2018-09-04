@@ -133,7 +133,7 @@
       <section class="content-section">
 
         <header class="section-header">
-          <h2>Education and Outreach</h2>
+          <h2>Teaching and Outreach</h2>
         </header>
 
         {% for job in site.data.outreach %}
@@ -159,8 +159,7 @@
 
         {% for recognition in site.data.recognitions %}
         <div class="resume-item">
-          <h3 class="resume-item-title" itemprop="award">{{ recognition.award }}</h3>
-          <h4 class="resume-item-details">{{ recognition.organization }} &bull; {{ recognition.year }}</h4>
+          <h3 class="resume-item-title" itemprop="award">{{ recognition.award }} &bull; {{ recognition.year }}</h3>
           <p class="resume-item-copy">{{ recognition.summary }}</p>
         </div>
         {% endfor %}
@@ -266,7 +265,7 @@
       {% endif %}
 
       <footer class="page-footer">
-        <p class="footer-line">Have a question? Email me at <a href="mailto:cj.taiudovicic@gmail.com">cj.taiudovicic@gmail.com</a></p>
+        <p class="footer-line">Inquiries? Email me at <a href="mailto:cj.taiudovicic@gmail.com">cj.taiudovicic@gmail.com</a></p>
       </footer>
 
     </div>

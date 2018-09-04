@@ -1,15 +1,13 @@
 # Recognitions
-- award: UC Merit Award
-  organization: University College, University of Toronto
-  year: 2017
-  summary: Awarded for significant contribution to the college in the areas of residence and student life.
 
-- award: Runner-up Best Presentation
-  organization: Advances in Earth Sciences Research Conference, Western University
+- award: AESRC Best Presentation (Runner-up)
   year: 2017
   summary: Awarded for the presentation, <i>"Optical Maturity and Rock Abundance - Dating the Lunar Surface with Remote Sensing"</i>.
 
-- award: Arbor Scholar
-  organization: University of Toronto
-  year: 2012 &mdash; 2017
-  summary: Awarded for placing as a finalist in the competitive University of Toronto National Scholarship Program.
+- award: NSERC Undergraduate Student Research Award
+  year: 2016
+  summary: Awarded in support of independent undergraduate research on using Optical Maturity (OMAT) and Rock Abundance (RA) as age metrics for the lunar surface.
+
+- award: Lunar and Planetary Institute (LPI) Summer Internship
+  year: 2015
+  summary: Internship partnered with NASA JSC for undergraduate summer research on ithe formation of lunar swirls.
