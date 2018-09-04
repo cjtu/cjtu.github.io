@@ -76,11 +76,9 @@
           <h2>Publications</h2>
         </header>
 
-        {% for job in site.data.publications %}
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
-          <h4 class="resume-item-details" itemprop="description">{{ job.position }} &bull; {{ job.duration }}</h4>
-          <p class="resume-item-copy">{{ job.summary }}</p>
+        {% for pub in site.data.publications %}
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/ScholarlyArticle">
+	  <p class="resume-item-pub">{{pub.authors}}, {{pub.title}}, In {{pub.journal}}, Volume {{pub.volume}}, {{pub.year}}, Pages {{pub.pages}}, ISSN {{pub.issn}}</p>
         </div><!-- end of resume-item -->
         {% endfor %}
 
@@ -97,11 +95,10 @@
           <h2>Presentations</h2>
         </header>
 
-        {% for job in site.data.presentations %}
+        {% for presentation in site.data.presentations %}
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
-          <h4 class="resume-item-details" itemprop="description">{{ job.position }} &bull; {{ job.duration }}</h4>
-          <p class="resume-item-copy">{{ job.summary }}</p>
+          <h4 class="resume-item-details" itemprop="description">{{ presentation.conference }} &bull; {{ presentation.date }}</h4>
+	  <p class="resume-item-copy">{{ presentation.title }} (<i>{{ presentation.type }}{{ presentation.abstract }}</i>)</p>
         </div><!-- end of resume-item -->
         {% endfor %}
 

@@ -157,6 +157,7 @@
   .resume-item-title,
   .resume-item-details,
   .resume-item-copy,
+  .resume-item-pub,
   .resume-item-list {
     a {
       color: #333;
@@ -171,6 +172,7 @@
   }
 
   .resume-item-copy { margin: .75rem 0 0; }
+  .resume-item-pub { margin: 1rem; text-indent: -1rem; }
 }
 
 // footer styles

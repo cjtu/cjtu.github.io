@@ -18,16 +18,18 @@ resume_contact_address:         ""
 resume_header_contact_info:     ""
 resume_header_intro:            "<p>I am a planetary scienist in the Astronomy and Planetary Science PhD program at Northern Arizona University. My research interests include lunar surface processes and volatiles, specifically the formation and distribution of the 3&mu; OH/H<sub>2</sub>O feature.</p>"
 
-# Decide which sections to use
-# comment out to hide
-resume_section_experience:      true
+# Comment out unused sections
+# resume_section_associations:    true
 resume_section_education:       true
-resume_section_projects:        true
-# resume_section_skills:          false
-resume_section_recognition:     true
-# resume_section_links:           true
-# resume_section_associations:    false
+# resume_section_experience:      true
 # resume_section_interests:       true
+# resume_section_links:           true
+resume_section_outreach:        true
+resume_section_presentations:   true
+# resume_section_projects:       true
+resume_section_publications:    true
+resume_section_recognition:     true
+# resume_section_skills:         true
 
 # Resume social links
 # uncomment the options you wish to display, and add your own URL
