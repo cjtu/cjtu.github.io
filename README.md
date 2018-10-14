@@ -1,6 +1,6 @@
 # CV
 
-Welcome to my CV! See [https:cjtu.github.io] for the pretty rendered version.
+Welcome to my CV! See https://cjtu.github.io/ for the pretty rendered version.
 
 ## Acknowledgements
 This CV was made with [Jekyll](https://jekyllrb.com/) and [GitHub Pages](https://pages.github.com/).
