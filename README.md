@@ -1,9 +1,12 @@
-# homepage
+# CV
 
-A simple resume crated with Jekyll + GitHub Pages.
+Welcome to my CV! See [https:cjtu.github.io] for the pretty rendered version.
 
-Based on the [excellent template](http://resume-template.joelglovier.com/) by [Joel Glovier](http://joelglovier.com/).
+## Acknowledgements
+This CV was made with [Jekyll](https://jekyllrb.com/) and [GitHub Pages](https://pages.github.com/).
+
+It is based on the [excellent template](https://resume-template.joelglovier.com/) by [Joel Glovier](https://joelglovier.com/).
 
 ## License
 
-The code and styles are licensed under the MIT license. [See project license.](LICENSE)
+The code and styles are licensed under the MIT license. [See project license.](./LICENSE)
