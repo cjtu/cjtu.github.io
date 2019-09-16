@@ -1,14 +1,20 @@
 # Projects
 # uncomment the urls if you wish to display them, and add your own URL
+- project: SpIRL
+  role: Writer / Instructor
+  duration: 2019 &mdash; Present
+  url: "cjtu.github.io/spirl"
+  description: Scientific Programming IRL is a free online textbook and short course by scientists, for scientists. 
+
+- project: Plutopy
+  role: Developer / Open source advocate
+  duration: 2018
+  url: "cjtu.github.io/blog"
+  description: Plutopy is an open source repository that makes Git collaboration accessible for scientists.
 
 - project: Craterpy
-  role: Founder & Primary Developer
-  duration: 2016 &mdash; Present
+  role: Developer
+  duration: 2016
   url: "github.com/cjtu/craterpy"
-  description: Craterpy is an open-source data analysis toolkit for planetary scientists. It simplifies statistical analyses on images of impact craters.
+  description: Craterpy is a toolkit that simplifies planetary impact crater data science.
 
-- project: Becoming a Planetary Developer Blog
-  role: Blogger
-  duration: 2017 &mdash; Present
-  url: "cjtu.github.io/blog"
-  description: Becoming a Planetary Developer is my dev blog when I post things I learn in my adventures as a budding software developer and planetary/data science enthusiast!

@@ -1,15 +1,20 @@
-# Outreach
+# Teaching and Outreach
+- company: NAU Department of Astronomy and Planetary Science
+  position: Coding Instructor
+  duration: Fall 2019
+  summary: Developed and taught <i>Scientific Programming In Real Life (SpIRL).</i> course.
+
+- company: Edwards Research Group
+  position: Coding Instructor
+  duration: Fall 2018
+  summary: Taught short course <i>Python and Git for reproducible Planetary Science.</i>
+
 - company: Solar System Exploration Group
   position: Coding Instructor
   duration: Summer 2017
-  summary: Developed and taught short course <i>Git for Reproducible Research.</i> 
+  summary: Taught short course <i>Git for Reproducible Research.</i> 
 
 - company: University of Toronto
   position: Co-organizer and lecturer
   duration: Fall 2016
   summary: Co-organized <i>International Observe the Moon Night</i> public outreach event.
-
-- company: Solar System Exploration Group
-  position: Coding Instructor
-  duration: Summer 2016
-  summary: Developed and co-taught short course <i>Python for Planetary Sciecne.</i>

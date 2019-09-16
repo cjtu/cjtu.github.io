@@ -1,18 +1,30 @@
 # Presentations
-- title: 'Optical Maturity and Rock Abundance: Dating the Lunar Surface with Remote Sensing' 
-  type: Talk
-  conference: Advances in Earth Sciences Research Conference (AESRC) 
-  date: 2017
-  abstract:
+- title: ' Plutopy:  Engaging the Wider Planetary Science Community with Open Source'
+  type: Poster
+  conference: 4th Planetary Data Workshop (PDW)
+  date: 2019
+  abstract: ' #7113'
+  url: 'https://www.hou.usra.edu/meetings/planetdata2019/pdf/7113.pdf'
+  eposter: 'https://www.hou.usra.edu/meetings/planetdata2019/eposter/7113.pdf'
+
+- title: 'Plutopy:  An Open-Source Community for Learning Reproducible Planetary Science'
+  type: Poster
+  conference: 50th Lunar and Planetary Science Conference (LPSC)
+  date: 2019
+  abstract: ' #3218'
+  url: 'https://www.hou.usra.edu/meetings/lpsc2019/pdf/3218.pdf'
+  eposter: 'https://www.hou.usra.edu/meetings/lpsc2019/eposter/3218.pdf'
 
 - title: 'A Fresh Look at Aging Lunar Ejecta: Insights from Optical Maturity (OMAT) and Rock Abundance (RA)'
   type: Poster
   conference: American Geophysical Union (AGU) Fall Meeting 
   date: 2016
   abstract: ' #P53C-2227'
+  url: 'https://agu.confex.com/agu/fm16/meetingapp.cgi/Paper/169655'
 
 - title: 'Applications of Solar Wind Particle Impact Simulations at Lunar Magnetic Anomalies to the Study of Lunar Swirls'
   type: Talk
-  conference: Lunar and Planetary Science Conference (47th)
+  conference: 47th Lunar and Planetary Science Conference (LPSC)
   date: 2016
   abstract: ' #2648'
+  url: 'https://www.hou.usra.edu/meetings/lpsc2016/pdf/2648.pdf'

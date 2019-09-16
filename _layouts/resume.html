@@ -78,7 +78,7 @@
 
         {% for pub in site.data.publications %}
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/ScholarlyArticle">
-	  <p class="resume-item-pub">{{pub.authors}}, {{pub.title}}, In {{pub.journal}}, Volume {{pub.volume}}, {{pub.year}}, Pages {{pub.pages}}, ISSN {{pub.issn}}</p>
+	  <p class="resume-item-pub">{{pub.authors}}, "{{pub.title}}", <i>{{pub.journal}}</i>, {{pub.volume}}, ({{pub.year}}), {{pub.pages}}</p>
         </div><!-- end of resume-item -->
         {% endfor %}
 
@@ -98,7 +98,9 @@
         {% for presentation in site.data.presentations %}
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
           <h4 class="resume-item-details" itemprop="description">{{ presentation.conference }} &bull; {{ presentation.date }}</h4>
-	  <p class="resume-item-copy">{{ presentation.title }} (<i>{{ presentation.type }}{{ presentation.abstract }}</i>)</p>
+	  <p class="resume-item-copy">{{ presentation.title }} (<i>
+        {% if presentation.eposter %}<a href="{{ presentation.eposter }}" itemprop="url">{{ presentation.type }}</a>{% else %}{{ presentation.type }}{% endif %}
+        {% if presentation.url %}<a href="{{ presentation.url }}" itemprop="url">{{ presentation.abstract }}</a>{% else %}{{ presentation.abstract }}{% endif %}</i>)</p>
         </div><!-- end of resume-item -->
         {% endfor %}
 
