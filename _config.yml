@@ -1,6 +1,6 @@
 # Site settings
-title: "Christian Tai Udovicic"
-description: "Christian Tai Udovicic is a graduate researcher at Northern Arizona University."
+title: "C. J. Tai Udovicic CV"
+description: "Christian J. Tai Udovicic is a graduate researcher at Northern Arizona University."
 
 # Build settings
 markdown: kramdown
@@ -42,6 +42,11 @@ resume_social_links:
   # resume_instagram_url:
   resume_website_url:           "http://cjtu.github.io/"
 resume_print_social_links:      true
+
+# Option to add a Goggle analytics tracking code
+# Navigate to https://analytics.google.com, add a new property for your site and copy the tracking id here.
+google_analytics:
+  mytrackingcode: UA-111642150-2
 
 # Design settings
 resume_theme:                   default
