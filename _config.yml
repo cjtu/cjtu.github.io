@@ -1,6 +1,6 @@
 # Site settings
 title: "Christian J. Tai Udovicic | Planetary Scientist"
-description: "Christian J. Tai Udovicic is a Ph.D. student at Northern Arizona University."
+description: "Christian J. Tai Udovicic is a Ph.D. candidate at Northern Arizona University."
 
 # Build settings
 markdown: kramdown
@@ -11,12 +11,12 @@ sass:
 # Resume settings
 resume_avatar:                  "true"
 resume_name:                    "Christian J. Tai Udovicic"
-resume_title:                   "Graduate Student"
-resume_contact_email:           "cjt347@nau.edu"
+resume_title:                   "PhD Candidate"
+resume_contact_email:           "cjtu@nau.edu"
 resume_contact_telephone:       "928-266-4451"
 resume_contact_address:         ""
 resume_header_contact_info:     ""
-resume_header_intro:            '<p>I use infrared imagery of the Moon to understand how its surface evolves over time. I am also passionate about reproducible research and recently developed <a href="https://cjtu.github.io/spirl">SpIRL</a>, a practical guide to Scientific Programming IRL.</p>'
+resume_header_intro:            '<p>I use orbital data to understand how the Moon evolves over time. I am passionate about open source reproducible research and social justice. Check out my textbook <a href="https://cjtu.github.io/spirl">Scientific Programming In Real Life (SPIRL)</a>, or some of my <a href="https://github.com/cjtu">GitHub</a> projects below.</p>'
 
 # Comment out unused sections
 # resume_section_associations:    true

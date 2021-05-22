@@ -1,9 +1,32 @@
 # Presentations
-- title: ' Plutopy:  Engaging the Wider Planetary Science Community with Open Source'
+- title: 'The lunar space weathering rate: dichotomies in agents and products'
+  type: Poster
+  conference: American Geophysical Union (AGU) Fall Meeting 
+  date: 2020
+  abstract: '#P054-0007 '
+  url: 'https://agu.confex.com/agu/fm20/webprogram/Paper709298.html'
+
+- title: 'Testing Lunar Near-Infrared Corrections with Diviner Observations'
+  type: Poster
+  conference: 51st Lunar and Planetary Science Conference (LPSC)
+  date: 2020
+  abstract: '#2632 '
+  url: 'https://www.hou.usra.edu/meetings/lpsc2020/pdf/2632.pdf'
+
+- title: 'Validating a Lunar Roughness-Based Thermal Correction with Diviner Temperature Observations'
+  type: Poster
+  conference: American Geophysical Union (AGU) Fall Meeting 
+  date: 2019
+  abstract: '#P33F-3500 '
+  url: 'https://agu.confex.com/agu/fm19/meetingapp.cgi/Paper/562676'
+  eposter: 'https://docs.google.com/viewer?url=https://agu.confex.com/agu/fm19/mediafile/Handout/Paper562676/TaiUdovicic_AGUPoster.pdf'
+
+
+- title: 'Plutopy:  Engaging the Wider Planetary Science Community with Open Source'
   type: Poster
   conference: 4th Planetary Data Workshop (PDW)
   date: 2019
-  abstract: ' #7113'
+  abstract: '#7113 '
   url: 'https://www.hou.usra.edu/meetings/planetdata2019/pdf/7113.pdf'
   eposter: 'https://www.hou.usra.edu/meetings/planetdata2019/eposter/7113.pdf'
 
@@ -11,20 +34,25 @@
   type: Poster
   conference: 50th Lunar and Planetary Science Conference (LPSC)
   date: 2019
-  abstract: ' #3218'
+  abstract: '#3218 '
   url: 'https://www.hou.usra.edu/meetings/lpsc2019/pdf/3218.pdf'
   eposter: 'https://www.hou.usra.edu/meetings/lpsc2019/eposter/3218.pdf'
+
+- title: 'Optical Maturity and Rock Abundance: Dating the Lunar Surface with Remote Sensing'
+  type: Talk
+  conference: Advances in Earth Sciences Research Conference (AESRC)
+  date: 2017
 
 - title: 'A Fresh Look at Aging Lunar Ejecta: Insights from Optical Maturity (OMAT) and Rock Abundance (RA)'
   type: Poster
   conference: American Geophysical Union (AGU) Fall Meeting 
   date: 2016
-  abstract: ' #P53C-2227'
+  abstract: '#P53C-2227 '
   url: 'https://agu.confex.com/agu/fm16/meetingapp.cgi/Paper/169655'
 
 - title: 'Applications of Solar Wind Particle Impact Simulations at Lunar Magnetic Anomalies to the Study of Lunar Swirls'
   type: Talk
   conference: 47th Lunar and Planetary Science Conference (LPSC)
   date: 2016
-  abstract: ' #2648'
+  abstract: '#2648 '
   url: 'https://www.hou.usra.edu/meetings/lpsc2016/pdf/2648.pdf'

@@ -1,15 +1,20 @@
 # Jobs
+- company: Lunar and Planetary Institute
+  position: Exploration Science Summer Intern
+  duration: May, 2021 &mdash; Present
+  summary: Supporting lunar mission development.
+
 - company: ParseHub
   position: Software Developer Intern
-  duration: Nov, 2017 &mdash; Present
-  summary: <<i> AngularJS, HTML, CSS </i>>  Improving UI/UX design to measureably improve application usabillity and new user retention.
+  duration: Nov, 2017 &mdash; May 2018
+  summary: Front-end development of web scraping tool.
 
 - company: Solar System Exploration Group, University of Toronto
   position: Planetary Research Assistant
   duration:  May 2014 &mdash; Jun, 2017
-  summary: <<i> Python, MATLAB, ArcGIS </i>>  Developed extensible, reproducible workflows for studying lunar space weathering and cratering processes.
+  summary: Constrained the lunar space weathering rate.
 
 - company: Lunar and Planetary Institute
   position: Summer Intern
   duration:   May, 2015  &mdash; Aug, 2015
-  summary: <<i> JMARS, IDL, ENVI </i>>  Investigated anomalous lunar swirls through mapping and physical modelling.
+  summary: Investigated the formation of lunar swirls.
