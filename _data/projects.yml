@@ -3,24 +3,24 @@
 - project: Roughness (coming soon)
   role: Developer
   duration: 2020 &mdash; Present
-  # url: "github.com/NAU-PIXEL/roughness"
+  # url: "https://github.com/NAU-PIXEL/roughness"
   description: Predict illumination on rough planetary surfaces.
 
 - project: Scientific Programming In Real Life (SPIRL)
   role: Author / Instructor
   duration: 2019 &mdash; Present
-  url: "cjtu.github.io/spirl"
+  url: "https://cjtu.github.io/spirl"
   description: Learn bash, Git, and Python interactively - completely free and open source.
 
 - project: Craterpy
   role: Developer
   duration: 2016 &mdash; Present
-  url: "github.com/cjtu/craterpy"
+  url: "https://github.com/cjtu/craterpy"
   description: Impact crater data science in Python.
 
 - project: Plutopy
   role: Developer / Open source advocate
   duration: 2018
-  url: "cjtu.github.io/blog"
+  url: "https://github.com/cjtu/plutopy"
   description: Learn Git and GitHub the hands-on way.
 

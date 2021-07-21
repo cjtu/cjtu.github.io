@@ -39,12 +39,32 @@
 
       </header>
 
+
+      {% if site.resume_section_publications %}
+      <!-- begin Publications -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Publications</h2>
+        </header>
+
+        {% for pub in site.data.publications %}
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/ScholarlyArticle">
+	  <p class="resume-item-pub">
+      {{pub.authors}}{% if pub.year %} ({{pub.year}}),{% endif %} "{{pub.title}}", {% if pub.journal %}<i>{{pub.journal}}</i>{% endif %}{% if pub.volume %}, {{pub.volume}}{% endif %}{% if pub.pages %}, {{pub.pages}}{% endif %}. {% if pub.doi %}<a href={{pub.doi}} itemprop="url">{{pub.doi}}</a> {% endif %}{% if pub.pdf %}<a href={{pub.pdf}} itemprop="url">PDF</a> {% endif %}</p>
+        </div><!-- end of resume-item -->
+        {% endfor %}
+
+      </section>
+      <!-- end Publications -->
+      {% endif %}
       
+
       {% if site.resume_section_projects %}
       <!-- begin Projects -->
       <section class="content-section">
         <header class="section-header">
-          <h2>Projects</h2>
+          <h2 id='projects'>Projects</h2>
         </header>
 
         {% for project in site.data.projects %}
@@ -58,25 +78,6 @@
 
       </section>
       <!-- end Projects -->
-      {% endif %}
-
-      
-      {% if site.resume_section_publications %}
-      <!-- begin Publications -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Publications</h2>
-        </header>
-
-        {% for pub in site.data.publications %}
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/ScholarlyArticle">
-	  <p class="resume-item-pub">{{pub.authors}}, "{{pub.title}}", {% if pub.journal %}<i>{{pub.journal}}</i>{% endif %}{% if pub.volume %}, {{pub.volume}}{% endif %}{% if pub.year %} ({{pub.year}}){% endif %}{% if pub.pages %}, {{pub.pages}}{% endif %}. {{pub.doi}}</p>
-        </div><!-- end of resume-item -->
-        {% endfor %}
-
-      </section>
-      <!-- end Publications -->
       {% endif %}
 
 

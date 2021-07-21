@@ -16,7 +16,12 @@ resume_contact_email:           "cjtu@nau.edu"
 resume_contact_telephone:       "928-266-4451"
 resume_contact_address:         ""
 resume_header_contact_info:     ""
-resume_header_intro:            '<p>I use orbital data to understand how the Moon evolves over time. I am passionate about open source reproducible research and social justice. Check out my textbook <a href="https://cjtu.github.io/spirl">Scientific Programming In Real Life (SPIRL)</a>, or some of my <a href="https://github.com/cjtu">GitHub</a> projects below.</p>'
+resume_header_intro: >-
+    <p>I use orbital data to understand how the Moon evolves over time. 
+    I am passionate about open source reproducible research and social justice. 
+    Check out my textbook 
+    <a href="https://cjtu.github.io/spirl">Scientific Programming In Real Life (SPIRL)</a>, 
+    or some of my <a href="projects">GitHub projects</a> below.</p>
 
 # Comment out unused sections
 # resume_section_associations:    true
