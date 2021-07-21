@@ -120,8 +120,7 @@
         {% for presentation in site.data.presentations %}
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
           <h4 class="resume-item-details" itemprop="description">{{ presentation.conference }} &bull; {{ presentation.date }}</h4>
-	  <p class="resume-item-copy">{{ presentation.title }} (<i>
-        {% if presentation.eposter %}<a href="{{ presentation.eposter }}" itemprop="url">{{ presentation.type }}</a>{% else %}{{ presentation.type }}{% endif %}
+	  <p class="resume-item-copy">{{ presentation.title }} (<i>{% if presentation.eposter %}<a href="{{ presentation.eposter }}" itemprop="url">{{ presentation.type }}</a>{% else %}{{ presentation.type }}{% endif %}
         {% if presentation.url %}<a href="{{ presentation.url }}" itemprop="url">{{ presentation.abstract }}</a>{% else %}{{ presentation.abstract }}{% endif %}</i>)</p>
         </div><!-- end of resume-item -->
         {% endfor %}

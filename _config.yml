@@ -20,8 +20,8 @@ resume_header_intro: >-
     <p>I use orbital data to understand how the Moon evolves over time. 
     I am passionate about open source reproducible research and social justice. 
     Check out my textbook 
-    <a href="https://cjtu.github.io/spirl">Scientific Programming In Real Life (SPIRL)</a>, 
-    or some of my <a href="projects">GitHub projects</a> below.</p>
+    <a href="https://cjtu.github.io/spirl" itemprop="url">Scientific Programming In Real Life (SPIRL)</a>, 
+    or some of my <a href="#projects" itemprop="url">GitHub projects</a> below.</p>
 
 # Comment out unused sections
 # resume_section_associations:    true
