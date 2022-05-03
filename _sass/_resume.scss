@@ -95,7 +95,6 @@
   }
 
   .icon-link { display: inline-block;
-
     &:hover .icon path {
       fill: #333;
       @include transition(all .2s ease);
@@ -105,6 +104,11 @@
   .icon {
     height: 28px;
   }
+}
+
+.no-underline {
+  text-decoration: none !important;
+  border-bottom: 0px !important;
 }
 
 .contact-button {

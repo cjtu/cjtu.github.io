@@ -1,16 +1,28 @@
 # Publications
+- title: 'Spectral evidence for a pyroclastic mantle over the Tacquet formation and Menelaus domes of southwest Mare Serenitatis'
+  authors: 'Farrand, W. H., C. S. Edwards, <b>C. J. Tai Udovicic, C. J.</b>'
+  journal: Icarus
+  volume: 382
+  year: 2022
+  pages: 115021
+  doi: https://doi.org/10.1016/j.icarus.2022.115021
+  pdf: 'pdfs/Farrand_et_al_2022_Icarus.pdf'
+
 - title: 'New Constraints on the Lunar Optical Space Weathering Rate'
   authors: '<b>Tai Udovicic, C. J.</b>, E. S. Costello, R. R. Ghent, C. S. Edwards'
   journal: Geophysical Research Letters
   volume: 48
   year: 2021
+  pages: e2020GL092198
   doi: https://doi.org/10.1029/2020GL092198
   pdf: 'pdfs/Tai_Udovicic_et_al_2021.pdf'
 
 - title: 'The importance of Code of Conduct policies for conferences, mission teams, and research endeavors'
-  authors: 'Diniega, S., <b>C. J. Tai Udovicic</b>, C. Elder, J. Scully, J. Rathbun, A. Rutledge, J. Castillo-Rogez, I. Daubar, R. Pappalardo, C. Richey, M. Villarreal, M. Milazzo, T. Goudge, J. Filiberto, K. Bennett, J. Roberts'
+  authors: 'Diniega, S., et al. including <b>C. J. Tai Udovicic</b>'
   journal: Planetary Decadal Survey White Paper
   year: 2021
+  doi: https://doi.org/10.3847/25c2cfeb.414c64ae
+  pdf: 'pdfs/Diniega_et_al_2021_white_paper.pdf'
 
 - title: 'Lunar crater ejecta: Physical properties revealed by radar and thermal infrared observations'
   authors: 'Ghent, R. R., L.M. Carter, J. L. Bandfield, <b>C. J. Tai Udovicic</b>, B. A. Campbell'
@@ -19,3 +31,4 @@
   year: 2016
   pages: 182&ndash;195
   doi: https://doi.org/10.1016/j.icarus.2015.12.014
+  pdf: 'pdfs/Ghent_et_al_2016.pdf'

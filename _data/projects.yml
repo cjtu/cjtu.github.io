@@ -1,16 +1,21 @@
 # Projects
-# uncomment the urls if you wish to display them, and add your own URL
-- project: Roughness (coming soon)
+- project: MoonPIES (coming soon)
+  role: Developer
+  duration: 2021 &mdash; Present
+  # url: "https://cjtu.github.io/moonpies"
+  description: Moon Polar Ice and Ejecta Stratigraphy Monte Carlo model.
+
+- project: Roughness
   role: Developer
   duration: 2020 &mdash; Present
-  # url: "https://github.com/NAU-PIXEL/roughness"
+  url: "https://github.com/NAU-PIXEL/roughness"
   description: Predict illumination on rough planetary surfaces.
 
 - project: Scientific Programming In Real Life (SPIRL)
   role: Author / Instructor
   duration: 2019 &mdash; Present
   url: "https://cjtu.github.io/spirl"
-  description: Learn bash, Git, and Python interactively - completely free and open source.
+  description: Practical Python, Git and Bash for scientists in a hurry.
 
 - project: Craterpy
   role: Developer

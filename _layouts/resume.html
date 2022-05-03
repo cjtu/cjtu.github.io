@@ -45,13 +45,13 @@
       <section class="content-section">
 
         <header class="section-header">
-          <h2>Publications</h2>
+          <h2 id='publications'>Publications</h2>
         </header>
 
         {% for pub in site.data.publications %}
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/ScholarlyArticle">
-	  <p class="resume-item-pub">
-      {{pub.authors}}{% if pub.year %} ({{pub.year}}),{% endif %} "{{pub.title}}", {% if pub.journal %}<i>{{pub.journal}}</i>{% endif %}{% if pub.volume %}, {{pub.volume}}{% endif %}{% if pub.pages %}, {{pub.pages}}{% endif %}. {% if pub.doi %}<a href={{pub.doi}} itemprop="url">{{pub.doi}}</a> {% endif %}{% if pub.pdf %}<a href={{pub.pdf}} itemprop="url">PDF</a> {% endif %}</p>
+	      <p class="resume-item-pub">
+        {{pub.authors}}{% if pub.year %} ({{pub.year}}),{% endif %} "{{pub.title}}", {% if pub.journal %}<i>{{pub.journal}}</i>{% endif %}{% if pub.volume %}, {{pub.volume}}{% endif %}{% if pub.pages %}, {{pub.pages}}{% endif %}. {% if pub.doi %}<a href={{pub.doi}} itemprop="url">{{pub.doi}}</a> {% endif %}{% if pub.pdf %}<span class="icon-link-item"><a href="{{ pub.pdf }}" class="icon-link no-underline" itemprop="sameAs"><i class="fa fa-download" style="padding-left: 20px"></i></a></span>{% endif %}</p>
         </div><!-- end of resume-item -->
         {% endfor %}
 
@@ -121,7 +121,7 @@
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
           <h4 class="resume-item-details" itemprop="description">{{ presentation.conference }} &bull; {{ presentation.date }}</h4>
 	  <p class="resume-item-copy">{{ presentation.title }} (<i>{% if presentation.eposter %}<a href="{{ presentation.eposter }}" itemprop="url">{{ presentation.type }}</a>{% else %}{{ presentation.type }}{% endif %}
-        {% if presentation.url %}<a href="{{ presentation.url }}" itemprop="url">{{ presentation.abstract }}</a>{% else %}{{ presentation.abstract }}{% endif %}</i>)</p>
+        {% if presentation.url %}<a href="{{ presentation.url }}" itemprop="url">{{ presentation.abstract }}</a>{% else %}{{ presentation.abstract }}{% endif %}</i> )</p>
         </div><!-- end of resume-item -->
         {% endfor %}
 
