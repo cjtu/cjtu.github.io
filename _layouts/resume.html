@@ -5,7 +5,7 @@
 
   <body class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}">
 
-    <div class="wrapper" itemscope itemtype="http://schema.org/Person">
+    <div class="wrapper" itemscope itemtype="https://schema.org/Person">
       <meta itemprop="telephone" content="{{ site.resume_contact_telephone }}"/>
       <meta itemprop="address" content="{{ site.resume_contact_address }}"/>
 
@@ -49,7 +49,7 @@
         </header>
 
         {% for pub in site.data.publications %}
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/ScholarlyArticle">
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="https://schema.org/ScholarlyArticle">
 	      <p class="resume-item-pub">
         {{pub.authors}}{% if pub.year %} ({{pub.year}}),{% endif %} "{{pub.title}}", {% if pub.journal %}<i>{{pub.journal}}</i>{% endif %}{% if pub.volume %}, {{pub.volume}}{% endif %}{% if pub.pages %}, {{pub.pages}}{% endif %}. {% if pub.doi %}<a href={{pub.doi}} itemprop="url">{{pub.doi}}</a> {% endif %}{% if pub.pdf %}<span class="icon-link-item"><a href="{{ pub.pdf }}" class="icon-link no-underline" itemprop="sameAs"><i class="fa fa-download" style="padding-left: 20px"></i></a></span>{% endif %}</p>
         </div><!-- end of resume-item -->
@@ -68,8 +68,8 @@
         </header>
 
         {% for project in site.data.projects %}
-        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
-          <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
+        <div class="resume-item" itemscope itemtype="https://schema.org/CreativeWork">
+          <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="https://schema.org/Person" />
           <h3 class="resume-item-title" itemprop="name">{% if project.url %}<a href="{{ project.url }}" itemprop="url">{{ project.project }}</a>{% else %}{{ project.project }}{% endif %}</h3>
           <h4 class="resume-item-details" itemprop="description">{{ project.role }}  &bull; {{ project.duration }}</h4>
           <p class="resume-item-copy">{{ project.description }}</p>
@@ -89,7 +89,7 @@
         </header>
 
         {% for education in site.data.education %}
-        <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
+        <div class="resume-item" itemscope itemprop="alumniOf" itemtype="https://schema.org/CollegeOrUniversity">
           <h3 class="resume-item-title" itemprop="name">{{ education.uni }}</h3>
           <h4 class="resume-item-details group" itemprop="description">{{ education.degree }} &bull; {{ education.year }}</h4>
           <h5 class="resume-item-details award-title" itemprop="description">{{ education.award }}</h5>
@@ -118,7 +118,7 @@
         </header>
 
         {% for presentation in site.data.presentations %}
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="https://schema.org/Organization">
           <h4 class="resume-item-details" itemprop="description">{{ presentation.conference }} &bull; {{ presentation.date }}</h4>
 	  <p class="resume-item-copy">{{ presentation.title }} (<i>{% if presentation.eposter %}<a href="{{ presentation.eposter }}" itemprop="url">{{ presentation.type }}</a>{% else %}{{ presentation.type }}{% endif %}
         {% if presentation.url %}<a href="{{ presentation.url }}" itemprop="url">{{ presentation.abstract }}</a>{% else %}{{ presentation.abstract }}{% endif %}</i> )</p>
@@ -139,7 +139,7 @@
         </header>
 
         {% for job in site.data.outreach %}
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="https://schema.org/Organization">
           <h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
           <h4 class="resume-item-details" itemprop="description">{{ job.position }} &bull; {{ job.duration }}</h4>
           <p class="resume-item-copy">{{ job.summary }}</p>
@@ -150,6 +150,25 @@
       <!-- end Outreach -->
       {% endif %}
 
+      {% if site.resume_section_experience %}
+      <!-- begin Experience -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Experience</h2>
+        </header>
+
+        {% for job in site.data.experience %}
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="https://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
+          <h4 class="resume-item-details" itemprop="description">{{ job.position }} &bull; {{ job.duration }}</h4>
+          <p class="resume-item-copy">{{ job.summary }}</p>
+        </div><!-- end of resume-item -->
+        {% endfor %}
+
+      </section>
+      <!-- end Experience -->
+      {% endif %}
 
       {% if site.resume_section_recognition %}
       <!-- begin Recognition -->
@@ -199,7 +218,7 @@
         </header>
 
         {% for association in site.data.associations %}
-        <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
+        <div class="resume-item" itemscope itemprop="memberOf" itemtype="https://schema.org/Organization">
           <h3 class="resume-item-title" itemprop="name">{% if association.url %}<a href="{{ association.url }}">{{ association.organization }}</a>{% else %}{{ association.organization }}{% endif %}</h3>
           <h4 class="resume-item-details" itemprop="description">{{ association.role }} &bull; {{ association.year }}</h4>
           <p class="resume-item-copy">{{ association.summary }}</p>

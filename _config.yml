@@ -40,12 +40,12 @@ resume_section_recognition:     true
 # uncomment the options you wish to display, and add your own URL
 resume_social_links:
   resume_github_url:            "https://github.com/cjtu"
-  resume_twitter_url:           "http://twitter.com/TaiUdovicic"
+  resume_twitter_url:           "https://twitter.com/TaiUdovicic"
   # resume_dribbble_url:
   # resume_facebook_url:
   resume_linkedin_url:          "https://www.linkedin.com/in/christian-tai-udovicic"
   # resume_instagram_url:
-  resume_website_url:           "http://cjtu.github.io/"
+  resume_website_url:           "https://cjtu.github.io/"
 resume_print_social_links:      true
 
 # Option to add a Goggle analytics tracking code

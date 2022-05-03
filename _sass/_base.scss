@@ -28,7 +28,7 @@ body{
 }
 
 // clearfix (now called group,
-// via http://css-tricks.com/snippets/css/clear-fix/)
+// via https://css-tricks.com/snippets/css/clear-fix/)
 .group:before,
 .group:after { content:""; display:table; }
 .group:after { clear:both; }
