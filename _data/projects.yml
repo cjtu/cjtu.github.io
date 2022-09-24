@@ -1,12 +1,12 @@
 # Projects
-- project: MoonPIES (coming soon)
-  role: Developer
+- project: MoonPIES
+  role: Lead developer
   duration: 2021 &mdash; Present
-  # url: "https://cjtu.github.io/moonpies"
-  description: Moon Polar Ice and Ejecta Stratigraphy Monte Carlo model.
+  url: "https://github.com/cjtu/moonpies"
+  description: Moon Polar Ice and Ejecta Stratigraphy model.
 
 - project: Roughness
-  role: Developer
+  role: Lead developer
   duration: 2020 &mdash; Present
   url: "https://github.com/NAU-PIXEL/roughness"
   description: Predict illumination on rough planetary surfaces.
@@ -18,13 +18,13 @@
   description: Practical Python, Git and Bash for scientists in a hurry.
 
 - project: Craterpy
-  role: Developer
+  role: Lead developer
   duration: 2016 &mdash; Present
   url: "https://github.com/cjtu/craterpy"
   description: Impact crater data science in Python.
 
 - project: Plutopy
-  role: Developer / Open source advocate
+  role: Open source advocate
   duration: 2018
   url: "https://github.com/cjtu/plutopy"
   description: Learn Git and GitHub the hands-on way.
