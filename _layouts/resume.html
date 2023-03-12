@@ -60,7 +60,7 @@
             </ul></h5>
 
 
-          <p class="resume-item-copy">{{ education.summary }}</p>
+          <p class="resume-item-copy">{{ education.summary }}{% if education.pdf %}<span class="icon-link-item"><a href="{{ education.pdf }}" class="icon-link no-underline" itemprop="sameAs"><i class="fa fa-download" style="padding-left: 20px"></i></a></span>{% endif %}</p>
         </div>
         {% endfor %}
       </section>
