@@ -40,7 +40,7 @@ resume_section_recognition:     true
 # uncomment the options you wish to display, and add your own URL
 resume_social_links:
   resume_github_url:            "https://github.com/cjtu"
-  resume_twitter_url:           "https://twitter.com/TaiUdovicic"
+  # resume_twitter_url:           "https://twitter.com/TaiUdovicic"
   # resume_dribbble_url:
   # resume_facebook_url:
   resume_linkedin_url:          "https://www.linkedin.com/in/christian-tai-udovicic"
@@ -50,8 +50,8 @@ resume_print_social_links:      true
 
 # Option to add a Goggle analytics tracking code
 # Navigate to https://analytics.google.com, add a new property for your site and copy the tracking id here.
-google_analytics:
-  mytrackingcode: UA-111642150-2
+# google_analytics:
+  # mytrackingcode: 
 
 # Design settings
 resume_theme:                   default
