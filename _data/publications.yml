@@ -1,4 +1,31 @@
 # Publications
+- title: 'Craterpy: Impact crater data science in Python'
+  authors: '<b>Tai Udovicic, C. J.</b>, A. Essunfeld, E. S. Costello'
+  journal: Journal of Open Source Software
+  volume: 10(113)
+  year: 2025
+  pages: 8663
+  doi: https://doi.org/10.21105/joss.08663
+  pdf: 'pdfs/Tai_Udovicic_et_al_2025_JOSS.pdf'
+
+- title: 'Cosmic rays and the Askaryan effect reveal subsurface structure and buried ice on the Moon'
+  authors: 'Costello, E. S., et al. including <b>C. J. Tai Udovicic</b>'
+  journal: Geophysical Research Letters
+  volume: 52.6
+  year: 2025
+  pages: e2024GL113304
+  doi: https://doi.org/10.1029/2024GL113304
+  pdf: 'pdfs/Costello_et_al_2025_proof.pdf'
+
+- title: 'HyPyRameter: A Python Toolbox to Calculate Spectral Parameters from Hyperspectral Reflectance Data'
+  authors: 'Phillips, M. S., <b>Tai Udovicic, C. J.</b>, et al.'
+  journal: The Planetary Science Journal
+  volume: 5.11
+  year: 2024
+  pages: 258
+  doi: https://doi.org/10.3847/PSJ/ad81f8
+  pdf: 'pdfs/Phillips_et_al_2024.pdf'
+
 - title: 'Buried Ice Deposits in Lunar Polar Cold Traps were Disrupted by Ballistic Sedimentation'
   authors: '<b>Tai Udovicic, C. J.</b>, K. R. Frizzell, et al.'
   journal: JGR Planets

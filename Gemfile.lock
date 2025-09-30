@@ -247,6 +247,7 @@ GEM
       unf_ext
     unf_ext (0.0.8.2)
     unicode-display_width (1.8.0)
+    webrick (1.9.1)
 
 PLATFORMS
   x86_64-linux
@@ -255,6 +256,7 @@ DEPENDENCIES
   github-pages
   tzinfo (~> 1.2)
   tzinfo-data
+  webrick
 
 BUNDLED WITH
    2.4.6
