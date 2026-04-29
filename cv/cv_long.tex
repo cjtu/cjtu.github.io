@@ -1,0 +1,341 @@
+%%%%%%%%%%%%%%%%% PREAMBLE %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Change the font size of your document - 10pt, 12.1pt, etc.
+\documentclass[letterpaper,11pt,oneside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\usepackage[hidelinks]{hyperref}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{ragged2e}
+\graphicspath{ {images/}} %upload your signature to this file
+%Change the margins to fit your CV/resume content
+\usepackage[left=1in, right=1in, bottom=1in, top=0.75in]{geometry}
+
+%Changes the page numbers - {arabic}=arabic numerals, {gobble}=no page numbers, {roman}=Roman numerals
+\pagenumbering{arabic}
+
+% Custom commands
+\DeclareRobustCommand{\okina}{%
+  \raisebox{\dimexpr\fontcharht\font`f-\height}{%
+    \scalebox{0.8}{`}%
+  }%
+}
+
+% Bibliography: pull articles from cv/my_publications_zotero.bib (the single
+% source of truth). Numbered, sorted newest-first; the user's name is bolded.
+\usepackage[backend=biber, style=numeric-comp, sorting=ydnt,
+            maxbibnames=99, giveninits=true, doi=true, url=false,
+            isbn=false, eprint=false, date=year]{biblatex}
+\addbibresource{my_publications_zotero.bib}
+
+% Bold the user's name everywhere it appears in the bibliography by hooking
+% into biblatex's per-component rendering macros. \namepartfamily is set by
+% the surrounding name format (the default), so it identifies the *current*
+% person being rendered regardless of which name component we're in.
+% biblatex inserts \bibnamedelima between space-separated family-name parts,
+% so the comparison must include it.
+\def\boldfamily{Tai\bibnamedelima Udovicic}
+\renewcommand*{\mkbibnamefamily}[1]{%
+  \ifdefequal{\namepartfamily}{\boldfamily}{\textbf{#1}}{#1}}
+\renewcommand*{\mkbibnamegiven}[1]{%
+  \ifdefequal{\namepartfamily}{\boldfamily}{\textbf{#1}}{#1}}
+\renewcommand*{\mkbibnameprefix}[1]{%
+  \ifdefequal{\namepartfamily}{\boldfamily}{\textbf{#1}}{#1}}
+
+% Tighten bibliography spacing inside the longtable cell.
+\setlength{\bibitemsep}{0.5ex}
+%%%%%%%%%%%%%%%%% END OF PREAMBLE %%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%% NAME OF APPLICANT %%%%%%%%%%%%%%%%%%%
+
+\noindent  \LARGE{\textbf{Christian J. Tai Udovicic, Ph.D.}}  \\
+\vspace{-1.5ex}
+\hrule
+\normalsize
+
+%%%%%%%%%%%%%%%%% CONTACT INFORMATION %%%%%%%%%%%%%%%%%
+% \begin{center}
+% \href{mailto:cj.taiudovicic@gmail.com}{cj.taiudovicic@gmail.com}
+
+% \href{www.taiudo.com}{www.taiudo.com}
+\vspace{-1ex}
+\begin{center}
+
+\begin{tabular}{r c l}
+University of Winnipeg & $\bullet$ & Department of Geography \\
+c.taiudovicic-ra@uwinnipeg.ca & $\bullet$ & cjtu.github.io \\
+linkedin.com/in/christian-tai-udovicic & $\bullet$ & \href{https://orcid.org/0000-0001-9972-1534}{orcid.org/0000-0001-9972-1534} \\
+\end{tabular}
+\end{center}
+\vspace{-1.5ex}
+\hrule
+
+\vspace{1ex}
+
+%%%%%%%%%%%%%%%%% SUMMARY %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+    \Large{Summary}
+
+    \vspace{1ex}
+    \noindent\justifying\normalsize{Dr. Tai Udovicic is a postdoctoral scholar investigating the evolution of planetary surfaces and their capacity to produce and retain valuable volatile species like water. He uses a combination of remote sensing spectroscopy and computational modeling, complemented by a background in open source software development to produce insights and tools for active and planned space missions. Tai Udovicic advocates for open science as a board member of the nonprofit OpenPlanetary.}
+\end{center}
+
+
+%%%%%%%%%%%%%%%%% MAIN BODY %%%%%%%%%%%%%%%%%%%%%%%%%%%
+% The main body is contained in a tabular environment. To move sections onto the next page, simply end the tabular environment and begin a new tabular environment.
+
+\noindent \begin{longtable}{@{} r l}
+\multicolumn{2}{@{} l}{\Large{Education}} \\
+    & \\
+    \textit{2022} & \textbf{Northern Arizona University}, Flagstaff, AZ, USA \\
+    & Ph.D. Astronomy and Planetary Science, \textit{With Distinction} \\
+    & \parbox{5in}{Dissertation: Eau Claire de la Lune: Clarifying the Origin and Distribution of Water on the Moon} \\
+    & \\
+    \textit{2017} & \textbf{University of Toronto}, Toronto, ON, Canada \\
+    & Hon. B.Sc. Planetary Science and Physics, \textit{Cum Laude}. \\
+    & Thesis: Lunar Surface Maturity in Optical Maturity and Rock Abundance \\
+    & \\
+
+% Publications are auto-generated from cv/my_publications_zotero.bib.
+% Run `python cv/scripts/update_publications.py` then rebuild this PDF
+% (see cv/README or run the update-cv skill) after updating Zotero.
+\multicolumn{2}{@{} l}{\Large{Publications}} \\
+\multicolumn{2}{@{} p{6.5in}}{%
+  \nocite{*}\printbibliography[heading=none]%
+} \\
+    & \\
+
+% \multicolumn{2}{@{} l}{\Large{Positions Held}} \\
+%     \textit{2023--pres.} & \textbf{Postdoctoral Scholar}, Northern Arizona University, Flagstaff, AZ, USA \\
+%      & \\
+%     \textit{Summer 2021} & \parbox{5.4in}{\textbf{Exploration Science Summer Intern}, LPI, Houston, TX, USA} \\
+%      & \\
+%     \textit{2017---2018} & \textbf{Software Developer}, Parsehub (Debuggex), Toronto, ON, Canada \\
+%      & \\
+%      \textit{Summer 2015} & \parbox{5.4in}{\textbf{Summer Intern}, LPI, Houston, TX, USA} \\
+%      & \\
+
+% Separate conference abstracts  
+\multicolumn{2}{@{} l}{\Large{Selected Conferences}} \\
+    & \\
+    & \parbox{5.4in}{\textbf{Tai Udovicic, C. J.}, Costello, E. S., Ghent, R. R., et al. (2025). Unveiling Buried Ice and Subsurface Structure on the Moon with the Cosmic Ray Lunar Sounder (CoRaLS), LPSC, \#2860} \\
+    & \\
+    & \parbox{5.4in}{\textbf{Tai Udovicic, C. J.}, Costello, E. S. (2024). Vanishing Rays on Vesta - New Insights into the Impact Gardening Rate using Fresh Craters, AGU, \#P41F-2970} \\
+    & \\
+    & \parbox{5.4in}{\textbf{Tai Udovicic, C. J.}, Costello, E. S. (2024). Modernizing Craterpy: An Open-Source Tool for Studying the Moon, Vesta, and Beyond, ELS} \\
+    & \\
+    & \parbox{5.4in}{\textbf{Tai Udovicic, C. J.}, Edwards, C. S., Ghent, R. R. (2023). Submicroscopic Iron Accumulation is Correlated with Local Iron Content, 54th LPSC, \#2832} \\
+    & \\ 
+    & \parbox{5.4in}{\textbf{Tai Udovicic, C. J.}, Gonzales, J. K., Ruiz, J. A., Edwards, C. S., Haberle, C., Farrand, W. H., Bandfield, J. L. (2021). Predicting Emitted Radiance of Rough Lunar Surfaces to Inform Volatile Distribution, GSA, \#108-7} \\
+    & \\
+    & \parbox{5.4in}{\textbf{Tai Udovicic, C. J.}, Costello, E. S., Edwards, C. S., Ghent, R. R. (2020). The lunar space weathering rate: dichotomies in agents and products, AGU FM, \#P054-0007} \\
+    & \\
+    & \parbox{5.4in}{\textbf{Tai Udovicic, C. J.}, Bandfield, J. L., et al. (2020). Testing Lunar Near-Infrared Corrections with Diviner Observations, 51st LPSC, \#2632} \\
+    & \\ 
+    & \parbox{5.4in}{\textbf{Tai Udovicic, C. J.}, Edwards, C. S., Bandfield, J. L. (2019). Validating a Lunar Roughness-Based Thermal Correction with Diviner Temperature Observations, AGU FM, \#P33F-3500} \\
+    & \\ 
+    % & \parbox{5.4in}{\textbf{Tai Udovicic, C. J.}, Boivin, A. L., Edwards, C. S. (2019). Plutopy: Engaging the Wider Planetary Science Community with Open Source, 4th Planetary Data Workshop, \#7113} \\
+    % & \\
+    % & \parbox{5.4in}{\textbf{Tai Udovicic, C. J.}, Boivin, A. L. (2019). Plutopy: An Open-Source Community for Learning Reproducible Planetary Science,  50th Lunar and Planetary Science Conference, \#3218} \\
+    % & \\
+    % & \textbf{Tai Udovicic, C. J.}, Mazrouei, S., Costello, E., Ghent, R. R., Lemelin, M.,  \\
+    % & \parbox{5.4in}{Lucey P. G. (2016). A Fresh Look at Aging Lunar Ejecta: Insights from Optical Maturity (OMAT) and Rock Abundance (RA), AGU Fall Meeting, \#P53C-2227} \\
+    % \\
+    % & \textbf{Tai Udovicic, C. J.}, Mazrouei, S., Costello, E., Ghent, R. R., Lemelin, M.,  \\
+    % & \parbox{5.4in}{Lucey P. G. (2016). A Fresh Look at Aging Lunar Ejecta: Insights from Optical Maturity (OMAT) and Rock Abundance (RA), AGU Fall Meeting, \#P53C-2227} \\
+    % & \\
+    % & \textbf{Tai Udovicic C. J.}, Kramer, G. Y., Harnett, E. M. (2016). Applications of  \\
+    % & \parbox{5.4in}{Solar Wind Particle Impact Simulations at Lunar Magnetic Anomalies to the Study of Lunar Swirls, 47th Lunar and Planetary Science Conference, \#2648} \\
+    % & \\
+
+
+% Grants
+% \multicolumn{2}{@{} l}{\Large{Grants}} \\
+%     \textit{2023--pres.} & \textbf{Co-I, NASA/Lunar Data Analysis Program (LDAP)} \\
+%     & \parbox{5.4in}{A Fresh Examination of the Moon's Young Craters: Insights from New Datasets and Analysis Tools} \\
+%     \textit{2021--2023} & \textbf{FI, NASA/FINESST} \\
+%     & \parbox{5.4in}{Constraining the Lunar Space Weathering Rate with Remote Sensing} \\
+%     & \\
+
+\newpage
+
+% Grants and Awards
+\multicolumn{2}{@{} l}{\Large{Selected Grants and Awards}} \\
+    & \\
+    \textit{Fall 2025} & \textbf{RCUH outstanding Employee of the Year}, University of Hawai{\okina}i \\
+    & \\
+    \textit{2023--pres.} & \textbf{Co-I, L-MAPS, NASA Lunar Terrain Vehicle}, University of Hawai{\okina}i \\
+    & \\
+    \textit{2023--pres.} & \textbf{Co-I, NASA Lunar Data Analysis Program}, University of Hawai{\okina}i \\
+    & \\
+    \textit{Fall 2024} & \textbf{PI, Catalyst Award for Science Advancement}, University of Hawai{\okina}i \\
+    & \\
+    \textit{2021--2023} & \textbf{FI, NASA FINESST Research Grant}, Northern Arizona University \\
+    & \\
+    \textit{Summer 2021} & \textbf{Exploration Science Summer Internship}, Lunar and Planetary Institute \\
+    & \\
+    \textit{Fall 2020} & \textbf{Richard Hayes Memorial Scholar}, Northern Arizona University \\
+    & \\
+    \textit{Spring 2017} & \textbf{UC Merit Award}, University of Toronto \\
+    & \\
+    \textit{Summer 2016} & \textbf{NSERC Undergraduate Student Research Award}, University of Toronto \\
+    & \\
+    \textit{Summer 2015} & \textbf{LPI Summer Internship}, Lunar and Planetary Institute \\
+    & \\
+    & \\
+
+% Teaching
+\multicolumn{2}{@{} l}{\Large{Teaching}} \\
+    & \\
+    \textit{Fall 2024} & \textbf{SOEST, University of Hawai{\okina}i at Manoa} \\
+    & \parbox{5.4in}{Instructor, \textit{SOEST Open Science and Data Management Plan Workshop} (\url{https://doi.org/10.5281/zenodo.14188968})} \\
+    & \\
+    \textit{2018--2021} & \textbf{Department of Astronomy and Planetary Science, NAU} \\
+    & \parbox{5.4in}{Instructor, \textit{SPIRL: Scientific Programming In Real Life} (\url{https://cjtu.github.io/spirl})} \\
+    & \\
+    \textit{Spring 2021} & \textbf{Department of Astronomy and Planetary Science, NAU} \\
+    & Instructor, \textit{AST181: Introduction to Observational Astronomy (Lab)} \\
+    & \\
+    \textit{2016--2017} & \textbf{Solar System Exploration Group, University of Toronto} \\
+    & Instructor, \textit{Python for Planetary Science, Git for Reproducible Research} \\
+    & \\
+    & \\
+
+% Professional Activities
+\multicolumn{2}{@{} l}{\Large{Professional Activities}} \\
+    & \\
+    \textit{Board Member} & OpenPlanetary (2023--pres.) \\
+    \textit{Science Teams} & \parbox{5.4in}{CSA: VMMO, LRM, NASA: L-MAPS, LRO Diviner, Lunar Trailblazer} \\
+    \textit{Peer Reviewer} & \parbox{5.35in}{AAS Planetary Science Journal (PSJ), AGU Earth and Space Science (ESS), AGU Geophysical Research Letters (GRL), NASA ROSES proposals (x3)}  \\
+    \textit{Organizer} & \parbox{5.4in}{Planetary Data Workshop (2021, 2023), LSSW 13 (2022)} \\
+    \textit{Mentorship} & \parbox{5.4in}{Research Experience for Undergraduates, Undergraduate Research Assistants, Louis Stokes Alliance for Minority Participation} \\
+    & \\
+
+% Skills
+% \multicolumn{2}{@{} l}{\Large{Relevant Skills}} \\
+%     \textit{Programming} & Python, MATLAB, IDL, C, Javascript, HTML/CSS, Git, shell  \\
+%     \textit{Computer} & GIS, GitHub, Microsoft Office suite, GSuite, Adobe, Windows, UNIX, Zoom \\
+%     \textit{Communication} & Strong verbal and written English, powerpoint \\
+%     & \\
+
+ 
+    
+     
+
+% \multicolumn{2}{@{} l}{\Large{Research Experience}} \\
+%     \textit{2016---2017} & \textbf{Lunar Crater Ejecta in Optical Maturity and Rock Abundance} \\
+%      & Supported by NSERC Undergraduate Student Research Award, Toronto, ON \\
+%      & Dating lunar craters using optical and thermal remote sensing.\\
+%      & \\
+%     \textit{Summer 2015} & \textbf{Lunar Swirls and Solar Wind Particle Simulations} \\
+%      & Supported by Lunar and Planetary Institute summer internship, Houston, TX \\
+%      & Testing the magnetic standoff theory for lunar swirls. \\
+%      & \\
+%     \textit{Summer 2014} & \textbf{Lunar Radar-Dark Halo Craters} \\
+%      & Supervised summer research course, Toronto, ON \\
+%      & Analyzing the survival time of surface and sub-surface blocks of radar-dark halos.\\
+%      & \\
+     
+
+     
+% \pagebreak
+% \multicolumn{2}{@{} l}{\Large{Presentations}} \\
+%     \textit{Apr 2017} & \textbf{Talk, University of Toronto} \\
+%      & Dept. Earth Sciences undergraduate thesis symposium \\
+%     \textit{Apr 2017} & \textbf{Talk, Western University, London, ON} \\
+%      & Advances in Earth Sciences Research Conference (AESRC) \\
+%     \textit{Mar 2017} & \textbf{Talk, Dept. Earth Sciences, University of Toronto} \\
+%      & Rockfest speaker series \\
+%     \textit{Dec 2016} & \textbf{Poster, AGU, San Francisco, CA} \\
+%      & American Geophysical Union Fall Meeting 2016 \\
+%     \textit{Oct 2016} & \textbf{Public lecture, University of Toronto} \\
+%      & International Observe the Moon Night at U of T  \\    
+%     \textit{Mar 2016} & \textbf{Talk, LPSC, The Woodlands, TX} \\
+%      & 47th Lunar and Planetary Science Conference \\
+%     \textit{Aug 2015} & \textbf{Talk, LPI, Houston, TX} \\
+%      & 2015 Lunar and Planetary Institute Summer Internship Conference \\
+%      & \\
+
+
+
+
+%%%%%%%%%%%%%%%%% REFERENCES %%%%%%%%%%%%%%%%%%%%%%%%%%
+% The reference section has links to your references' websites and email addresses.
+
+%  \multicolumn{2}{@{} l}{\Large{References}}\\
+%      & \vspace{-2.4em}\\
+%      & Dr. Rebecca Ghent \\
+%      & Department of Earth Sciences \\
+%      & University of Toronto \\
+%      & \small{\href{mailto:ghentr@es.utoronto.ca}{ghentr@es.utoronto.ca},+1\,(416)\,978-0597} \\
+%      & \\
+%      & Dr. Georgiana Kramer \\
+%      & Staff Scientist  \\
+%      & Lunar and Planetary Institute\\
+%      & \small{\href{mailto:kramer@lpi.usra.edu}{kramer@lpi.usra.edu},+1\,(281)\,486-2141} \\
+%      & \\
+%      & Dr. Christopher Edwards \\
+%      & Department of Physics and Astronomy \\
+%      & Northern Arizona University \\
+%      & \small{\href{mailto:christopher.edwards@nau.edu}{christopher.edwards@nau.edu},+1\,(123)\,789-1011} \\
+\end{longtable}
+
+
+
+% \clearpage
+% \setlength\parindent{0cm}
+% \pagenumbering{gobble} %cover letter should be one page, {gobble}=no page number
+
+
+
+% \begin{flushright}
+%  \today                           \\
+%  \vspace{1em}                              
+%  University of Toronto            \\
+%  Department of Earth Sciences                 \\
+%  33 Willcocks Street                     \\
+%  Toronto, ON M5S xxx   \\
+%  Phone: +1 (123) 456-7899         \\
+% \href{mailto:cj.taiudovicic@gmail.com}{cj.taiudovicic@gmail.com}  \\ %insert your email address here for a clickable link
+% \end{flushright}
+
+
+% \begin{flushleft}
+%  \textbf{Faculty Search Committee}         \\
+%  Name of University \\
+% Name of Department                  \\
+% Address of Department \\
+% City, State. Zip Code
+% \end{flushleft}
+
+% \vspace{2em}
+
+% Dear Sir or Madam, \\
+
+% \vspace{1em}
+% \onehalfspacing
+
+% I'm applying to this position in this subject at the Name of University. I have experience teaching something and something else and my research focuses on this and that. I completed my B.Sc. in Planetary Science and Physics in June 2017 at the University of Toronto.
+
+% \vspace{1em}
+
+% My educational background is in this and that at the former university along with an earned Master's and Ph.D. degree in this recent subject at this alma mater. I have taught this, that, and everything else. My research is in this area, that area, and another area still.
+
+% \vspace{1em}
+
+% My dissertation advisor, Professor Head Adviser, and committee members Professor Two and Professor Three have been instrumental throughout my time at Home University. Please feel free to contact me with any questions.
+
+% \vspace{1em}
+
+% \begin{flushright}
+% Sincerely, \\
+% \vspace{1em} 
+% \includegraphics[scale=0.45]{signature.PNG} \\ %insert your own signature here
+% \vspace{1em} 
+% Christian Tai Udovicic \\
+% \end{flushright}
+
+\end{document}
+

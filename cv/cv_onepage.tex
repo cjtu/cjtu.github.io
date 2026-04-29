@@ -1,0 +1,128 @@
+%%%%%%%%%%%%%%%%% PREAMBLE %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Change the font size of your document - 10pt, 12.1pt, etc.
+\documentclass[letterpaper,11pt,oneside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\usepackage[hidelinks]{hyperref}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{ragged2e}
+\graphicspath{ {images/}} %upload your signature to this file
+%Change the margins to fit your CV/resume content
+\usepackage[left=0.75in, right=0.75in, bottom=0.75in, top=0.75in]{geometry}
+
+%Changes the page numbers - {arabic}=arabic numerals, {gobble}=no page numbers, {roman}=Roman numerals
+\pagenumbering{gobble}
+
+% Custom commands
+\DeclareRobustCommand{\okina}{%
+  \raisebox{\dimexpr\fontcharht\font`f-\height}{%
+    \scalebox{0.8}{`}%
+  }%
+}
+
+% Bibliography: pull selected publications from cv/my_publications_zotero.bib.
+% Numbered, sorted newest-first; the user's name is bolded; capped at 5 entries
+% via the 'maxitems' option of \printbibliography.
+\usepackage[backend=biber, style=numeric-comp, sorting=ydnt,
+            maxbibnames=99, giveninits=true, doi=true, url=false,
+            isbn=false, eprint=false, date=year]{biblatex}
+\addbibresource{my_publications_zotero.bib}
+
+% biblatex inserts \bibnamedelima between space-separated family-name parts,
+% so the comparison must include it.
+\def\boldfamily{Tai\bibnamedelima Udovicic}
+\renewcommand*{\mkbibnamefamily}[1]{%
+  \ifdefequal{\namepartfamily}{\boldfamily}{\textbf{#1}}{#1}}
+\renewcommand*{\mkbibnamegiven}[1]{%
+  \ifdefequal{\namepartfamily}{\boldfamily}{\textbf{#1}}{#1}}
+\renewcommand*{\mkbibnameprefix}[1]{%
+  \ifdefequal{\namepartfamily}{\boldfamily}{\textbf{#1}}{#1}}
+
+\setlength{\bibitemsep}{0.3ex}
+
+%%%%%%%%%%%%%%%%% END OF PREAMBLE %%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%% NAME OF APPLICANT %%%%%%%%%%%%%%%%%%%
+
+\noindent  \LARGE{\textbf{Christian J. Tai Udovicic, Ph.D.}}  \\
+\vspace{-1.5ex}
+\hrule
+\normalsize
+
+%%%%%%%%%%%%%%%%% CONTACT INFORMATION %%%%%%%%%%%%%%%%%
+% \begin{center}
+% \href{mailto:cj.taiudovicic@gmail.com}{cj.taiudovicic@gmail.com}
+
+% \href{www.taiudo.com}{www.taiudo.com}
+\vspace{-1ex}
+\begin{center}
+% Northern Arizona University $\bullet$ Dept. Astronomy and Planetary Science
+
+% PO BOX 6010 $\bullet$ Flagstaff, AZ, 86011
+
+% cjtu@nau.edu $\bullet$ https://cjtu.github.io
+\begin{tabular}{r c l}
+University of Hawai{\okina}i at Manoa & $\bullet$ & Hawai{\okina}i Institute of Geophysics and Planetology \\
+1680 East-West Road, POST Building 602 & $\bullet$ & Honolulu, HI 96822 \\
+cjtu@hawaii.edu & $\bullet$ & https://cjtu.github.io \\
+\end{tabular}
+\end{center}
+\vspace{-1.5ex}
+\hrule
+
+%%%%%%%%%%%%%%%%% MAIN BODY %%%%%%%%%%%%%%%%%%%%%%%%%%%
+% The main body is contained in a tabular environment. To move sections onto the next page, simply end the tabular environment and begin a new tabular environment.
+
+\noindent \begin{longtable}{@{} r l}
+\multicolumn{2}{@{} l}{\Large{Education}} \\
+    \textit{2022} & Ph.D. Astronomy and Planetary Science, Northern Arizona University \\
+    \textit{2017} & Hon. B.Sc. Planetary Science and Physics, University of Toronto \\
+     & \\
+
+% Selected publications auto-generated from cv/my_publications_zotero.bib
+% (top 5 newest). The script writes \nocite{...} keys into selected_pubs.tex;
+% biblatex prints only those cited entries.
+\input{selected_pubs}
+\multicolumn{2}{@{} l}{\Large{Selected Publications}} \\
+\multicolumn{2}{@{} p{6.8in}}{%
+  \printbibliography[heading=none]%
+} \\
+    & \\
+
+% Separate conference abstracts  
+\multicolumn{2}{@{} l}{\Large{Selected Conferences}} \\
+    & \parbox{5.8in}{\textbf{Tai Udovicic, C. J.}, E. S. Costello (2024). Modernizing Craterpy: An Open-Source Tool for Studying the Moon, Vesta, and Beyond, ELS} \\
+    & \\
+    & \parbox{5.8in}{\textbf{Tai Udovicic, C. J.}, Edwards, C. S., Ghent, R. R. (2023). Submicroscopic Iron Accumulation is Correlated with Local Iron Content, 54th LPSC, \#2832} \\
+    % & \parbox{5.8in}{\textbf{Tai Udovicic, C. J.}, Gonzales, J. K., Ruiz, J. A., Edwards, C. S., Haberle, C., Farrand, W. H., Bandfield, J. L. (2021). Predicting Emitted Radiance of Rough Lunar Surfaces to Inform Volatile Distribution, GSA, \#108-7} \\
+    % & \parbox{5.8in}{\textbf{Tai Udovicic, C. J.}, Bandfield, J. L., et al. (2020). Testing Lunar Near-Infrared Corrections with Diviner Observations, 51st LPSC, \#2632} \\
+    % & \parbox{5.8in}{\textbf{Tai Udovicic, C. J.}, Boivin, A. L. (2019). Plutopy: An Open-Source Community for Learning Reproducible Planetary Science,  50th Lunar and Planetary Science Conference, \#3218} \\
+    & \\
+
+
+% Awards
+\multicolumn{2}{@{} l}{\Large{Selected Grants and Awards}} \\
+    \textit{2024--pres.} & \textbf{PI, Catalyst Award for Science Advancement}, University of Hawaii \\
+    \textit{2023--pres.} & \textbf{Co-I, NASA Lunar Data Analysis Program}, University of Hawaii \\
+    \textit{2021--2023} & \textbf{FI, NASA FINESST}, Northern Arizona University \\
+    \textit{Summer 2021} & \textbf{Exploration Science Summer Internship}, Lunar and Planetary Institute \\
+    \textit{Fall 2020} & \textbf{Richard Hayes Memorial Scholar}, Northern Arizona University \\
+    \textit{Summer 2016} & \textbf{NSERC Undergraduate Student Research Award}, University of Toronto \\
+    \textit{Summer 2015} & \textbf{LPI Summer Internship}, Lunar and Planetary Institute \\
+    & \\
+
+% Professional Activities
+\multicolumn{2}{@{} l}{\Large{Professional Activities}} \\
+    \textit{Board Member} & OpenPlanetary (2023--pres.) \\
+    \textit{Science Teams} & \parbox{5.8in}{CSA LRM, NASA LRO Diviner, NASA Lunar Trailblazer (2023)} \\
+    \textit{Peer Reviewer} & Planetary Science Journal (PSJ), Earth and Space Science (ESS)  \\
+    \textit{Organizer} & \parbox{5.8in}{Planetary Data Workshop (2021, 2023), LSSW 13 (2022)} \\
+    & \\
+
+\end{longtable}
+
+\end{document}
+
